@@ -15,3 +15,4 @@ class BabiesController < ApplicationController
     render nothing: true
   end
 end
+

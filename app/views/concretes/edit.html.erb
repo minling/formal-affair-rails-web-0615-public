@@ -1,1 +1,16 @@
 <!-- Your form goes here! -->
+<%= form_tag(@concrete, method: "patch") do %>
+  <%= label_tag("mix_type") %>
+  <%= text_field_tag('concrete[mix_type]', @concrete.mix_type) %>
+
+  <%= label_tag("Color") %>
+  <%= text_field_tag('concrete[color]', @concrete.color ) %>
+
+  <%= label_tag("psi") %>
+  <%= text_field_tag('concrete[psi]', @concrete.psi) %>
+
+  <%= label_tag("cost_per_yard") %>
+  <%= text_field_tag('concrete[cost_per_yard]', @concrete.cost_per_yard) %>
+
+  <%= submit_tag "Update Concrete" %>
+<% end %>
